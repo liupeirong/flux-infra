@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: gitops-test
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  path: ./sites/infrastructure/site1
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: gitops-test
+  targetNamespace: default
+
