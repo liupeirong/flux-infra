@@ -11,5 +11,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: gitops-test
-  targetNamespace: default
+  targetNamespace: mosquitto
 
