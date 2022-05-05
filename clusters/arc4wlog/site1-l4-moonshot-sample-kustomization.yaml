@@ -2,7 +2,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: site1-L4-moonshot-sample
+  name: site1-l4-moonshot-sample
   namespace: flux-system
 spec:
   interval: 1m0s
