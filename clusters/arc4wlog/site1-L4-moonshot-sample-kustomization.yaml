@@ -2,14 +2,13 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: gitops-test
+  name: site1-L4-moonshot-sample
   namespace: flux-system
 spec:
-  interval: 5m0s
-  path: ./sites/infrastructure/site1
+  interval: 1m0s
+  path: ./sites/apps/site1/L4
   prune: true
   sourceRef:
     kind: GitRepository
     name: gitops-test
-  targetNamespace: mosquitto
-
+  targetNamespace: moonshot-sample
